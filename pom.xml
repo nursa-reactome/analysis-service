@@ -38,6 +38,9 @@
 
         <maven.compiler.version>3.5.1</maven.compiler.version>
         <jdk.version>1.8</jdk.version>
+ 
+        <!-- Port used for production. -->
+        <analysis.server.port>8080</analysis.server.port>
     </properties>
 
     <developers>
@@ -250,7 +253,7 @@
                                   -Xms2048m -Xmx5120m
                     -->
                     <path>${deploymentPath}</path>
-                    <port>8080</port>
+                    <port>${analysis.server.port}</port>
                 </configuration>
             </plugin>
             <plugin>
